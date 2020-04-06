@@ -1,0 +1,92 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px;
+}
+
+header {
+	background-color: #fff;
+	box-shadow: var(--shadow);
+	border-radius: 20px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding: 30px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+h1 {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.panel {
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.btn {
+	background-color: var(--main-color);
+	color: #fff;
+	font-size: 20px;
+	border: none;
+	padding: 15px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.1s linear;
+	box-shadow: 0 8px 6px -6px black;
+	margin: 5px;
+}
+
+.btn_create {
+	font-size: 30px;
+}
+.btn_delete {
+	background-color: var(--bg-color);
+	color: #333;
+}
+.btn:active,
+.btn:focus {
+	outline: none;
+}
+.btn:active {
+	transform: scale(0.95);
+}
+
+.table-item {
+	height: 80px;
+	font-size: 18px;
+	background-color: #fff;
+	text-transform: uppercase;
+	color: #333;
+	text-align: center;
+	font-weight: 500;
+	box-shadow: var(--shadow);
+}
+.table-item:nth-child(2n) {
+	background-color: #e1f5f4;
+}
+
+thead th {
+	z-index: 10;
+	position: sticky;
+	top: 186px;
+	height: 80px;
+	font-size: 22px;
+	background-color: var(--main-color);
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #fff;
+	box-shadow: var(--shadow);
+}

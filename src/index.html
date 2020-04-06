@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Companies Table</title>
+		<!-- using google font -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700"
+		/>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+
+	<body>
+		<main class="container">
+			<header>
+				<h1>Companies Table</h1>
+				<div class="panel">
+					<span id="counter">Total offers (0)</span>
+					<button id="btn-create" class="btn btn_create">Create</button>
+				</div>
+			</header>
+			<table>
+				<thead>
+					<tr class="table-header">
+						<th>Company</th>
+						<th>Stack</th>
+						<th>Status</th>
+						<th>Pay Rate</th>
+						<th>Created</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="app"></tbody>
+			</table>
+		</main>
+		<div id="modal"></div>
+		<div id="spinner">
+			<div class="spinner"></div>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
